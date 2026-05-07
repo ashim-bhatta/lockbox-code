@@ -1,0 +1,46 @@
+{
+  "name": "paywall-zip",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node node_modules/next/dist/bin/next dev --webpack",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck && next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:reliability": "vitest run src/server/services/__tests__/webhook-service.reliability.test.ts"
+  },
+  "dependencies": {
+    "@supabase/auth-helpers-nextjs": "^0.15.0",
+    "@supabase/auth-helpers-react": "^0.15.0",
+    "@supabase/ssr": "^0.10.2",
+    "@supabase/supabase-js": "^2.104.1",
+    "lucide-react": "^1.9.0",
+    "next": "16.2.4",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "resend": "^6.12.2",
+    "stripe": "^22.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitest/coverage-v8": "^4.1.5",
+    "babel-plugin-react-compiler": "1.0.0",
+    "chai": "^6.2.2",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
+    "lightningcss": "^1.32.0",
+    "lightningcss-win32-x64-msvc": "^1.32.0",
+    "postcss": "^8.5.12",
+    "tailwindcss": "^4.2.4",
+    "typescript": "^5",
+    "vite": "^8.0.10",
+    "vite-tsconfig-paths": "^6.1.1",
+    "vitest": "^4.1.5"
+  }
+}

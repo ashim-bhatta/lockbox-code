@@ -1,0 +1,9 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/reconcile-stripe",
+      "schedule": "*/2 * * * *"
+    }
+  ]
+}
+

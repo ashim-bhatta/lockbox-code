@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "rootDir": ".",
+    "outDir": ".tmp-tests",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/server/logic/delivery-access.ts",
+    "src/app/api/deliveries/[id]/__tests__/route.redaction.test.ts",
+    "src/types/index.ts"
+  ]
+}
+
